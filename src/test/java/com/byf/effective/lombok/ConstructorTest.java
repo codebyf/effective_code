@@ -1,4 +1,4 @@
-package com.imooc.zhangxiaoxi.lombok;
+package com.byf.effective.lombok;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
