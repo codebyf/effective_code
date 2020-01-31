@@ -21,7 +21,5 @@ public class ABAOperation {
         new Thread(()->{
 
         }, "t1").start();
-
-
     }
 }
