@@ -3,6 +3,7 @@ package com.byf.interview.productconsumer;
 import java.sql.Time;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -61,7 +62,7 @@ class ShareResource{
 }
 public class ProductorConsumerTest {
     public static void main(String[] args) {
-        ShareResource shareResource = new ShareResource(new ArrayBlockingQueue<>(10));
+        ShareResource shareResource = new ShareResource(new LinkedBlockingDeque<>(10));
         new Thread(()->{
             System.out.println(Thread.currentThread().getName() + "\t生产线程启动");
             System.out.println();
